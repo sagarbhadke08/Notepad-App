@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <!-- <link
+      media="screen and (max-width: 1100px)"
+      rel="stylesheet"
+      href="./src/mobile.css"
+    /> -->
+    <title>Notepad</title>
+  </head>
+  <body>
+    <div class="parent">
+      <nav>
+        <div class="logo-img">
+          <img src="./resources/notepad-icon.svg" alt="logo" />
+        </div>
+        <ul class="nav-content">
+          <li>Editor</li>
+          <li>Developers</li>
+        </ul>
+      </nav>
+
+      <main class="container">
+        <aside class="notes-list">
+          <button id="add-note">
+            <img src="./resources/add-note.svg" />
+          </button>
+          <div class="list">
+            <div class="list1">
+              <input class="input-box" value="note-0"/ ><button
+                class="select-note"
+                id="0"
+              >
+                <img src="./resources/edit-icon.svg" alt="edit" />
+              </button>
+            </div>
+          </div>
+        </aside>
+        <section class="editor-container">
+          <div class="editor">
+            <textarea id="editorId" placeholder="Write Here ..."></textarea>
+          </div>
+          <aside class="tool-bar">
+            <div class="all-buttons">
+              <div class="bold-div">
+                <img src="./resources/bold-icon.svg" alt="" />
+              </div>
+              <div class="underline-div">
+                <img src="./resources/underline-icon.svg" alt="" />
+              </div>
+              <div class="copy-div">
+                <img src="./resources/copy-text-icon.svg" alt="" />
+              </div>
+              <div class="save-div">
+                <img src="./resources/save-icon.svg" alt="" />
+              </div>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+    <script type="module" src="./src/addNote.js"></script>
+  </body>
+</html>
